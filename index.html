@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Famille KINDO</title>
+    <style>
+        /* Styles Généraux */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        /* En-tête / Navigation */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Section Hero (Accueil) */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        /* Conteneur principal */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 10px;
+        }
+
+        /* Grille de photos (Galerie) */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            nav a { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#histoire">Notre Histoire</a>
+            <a href="#membres">Membres</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div id="accueil" class="hero">
+        <div>
+            <h1>Bienvenue chez les KINDO</h1>
+            <p>L'union fait notre force, l'amour fait notre bonheur.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <section id="histoire">
+            <h2>Notre Histoire</h2>
+            <p>Bienvenue sur le site officiel de la <strong>famille KINDO</strong>. Ce site a été créé pour préserver notre héritage, partager nos souvenirs et rester unis, peu importe la distance qui nous sépare.</p>
+            <p>Originaire de [Indiquez votre ville/pays d'origine], la famille KINDO se distingue par ses valeurs de respect, de solidarité et de travail.</p>
+        </section>
+
+        <section id="membres">
+            <h2>Les Branches de la Famille</h2>
+            <ul>
+                <li><strong>Branche A :</strong> Les descendants de [Nom du Grand-père]</li>
+                <li><strong>Branche B :</strong> Les descendants de [Nom de la Grand-mère]</li>
+                <li><strong>La Nouvelle Génération :</strong> Tous nos enfants et petits-enfants.</li>
+            </ul>
+        </section>
+
+        <section id="galerie">
+            <h2>Galerie Photos</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300" alt="Photo de famille 1">
+                <img src="https://via.placeholder.com/300" alt="Photo de famille 2">
+                <img src="https://via.placeholder.com/300" alt="Photo de famille 3">
+                <img src="https://via.placeholder.com/300" alt="Photo de famille 4">
+            </div>
+            <p style="text-align: center; margin-top: 10px; font-style: italic;">Plus de photos à venir...</p>
+        </section>
+
+        <section id="contact">
+            <h2>Prochains Rendez-vous</h2>
+            <p><strong>Grand Repas Annuel :</strong> Prévu pour le [Date] à [Lieu].</p>
+            <p>Pour ajouter une information ou une photo, contactez l'administrateur de la famille.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Famille KINDO - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
